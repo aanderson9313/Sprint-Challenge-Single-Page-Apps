@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CharacterCard from "./CharacterCard";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "./CharacterList.css"
 
 
 
@@ -27,8 +28,8 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <Link to = "/"><button>Home</button></Link>
-      <Link to = "/Search"><button>Search</button></Link>
+      <Link to = "/"><button className = "Buttons">Home</button></Link>
+      <Link to = "/Search"><button className = "Buttons">Search</button></Link>
 
       {character.map(ind => (
         <CharacterCard 

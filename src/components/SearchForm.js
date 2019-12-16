@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import { Link } from "react-router-dom";
+import "./CharacterList.css"
 
 
 export default function SearchForm() {
@@ -37,7 +38,7 @@ return(
         onChange = {handleInputChange}
       />
 
-      <Link to= "/"><button>Home</button></Link>
+      <Link to= "/"><button className = "Buttons">Home</button></Link>
 
     </form>
 

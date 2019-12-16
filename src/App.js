@@ -9,6 +9,9 @@ import { Route } from "react-router-dom";
 
 export default function App() {
 
+
+
+
   return (
 
     <main>
@@ -17,7 +20,7 @@ export default function App() {
       <Route exact path = "/Search" component = {SearchForm} />
       <Route exact path = "/" component = {WelcomePage} />
       <Route exact path = "/Characters" component = {CharacterList} />
-      
+
     </main>
   );
 }
