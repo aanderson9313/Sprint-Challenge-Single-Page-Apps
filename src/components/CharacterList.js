@@ -22,7 +22,7 @@ export default function CharacterList() {
       })
       .catch(error => {
         console.log('Server Error', error);
-      })
+      });
   }, []);
 
   return (
@@ -31,7 +31,13 @@ export default function CharacterList() {
       <Link to = "/Search"><button>Search</button></Link>
 
       {character.map(ind => (
-        <CharacterCard key = {ind.id} name = {ind.name} species = {ind.species} status = {ind.status} />
+        <CharacterCard 
+        key = {ind.id} 
+        name = {ind.name} 
+        species = {ind.species} 
+        status = {ind.status}
+        type = {ind.type} 
+         />
      
      ))}
     </section>

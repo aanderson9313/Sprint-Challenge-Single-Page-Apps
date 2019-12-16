@@ -9,7 +9,7 @@ export default function CharacterCard(props) {
       <h2>{props.name}</h2>
       <p>Species: {props.species}</p>
       <p>Status: {props.status}</p>
-      <p>Location: {props.location}</p>
+      <p>Type: {props.type}</p>
     </div>
 
  )
